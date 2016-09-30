@@ -126,4 +126,16 @@ trait Clients {
 
         return $response;
     }
+
+
+    public function AddClient($email,$password,$username,$country)
+    {
+        $params['email']                = $email;
+        $params['password2']            = $password;
+        $params["customfields"]         = base64_encode(serialize(array('1' => $username,'2' => $password)));
+        $params['country']              = $country;
+        $response = $this->getJson('addclient',$params);
+
+        return $response;
+    }
 }
