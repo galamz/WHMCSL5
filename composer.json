@@ -1,0 +1,35 @@
+{
+    "name": "galamz/WHMCSL5",
+    "description": "Laravel 5 WHMCS API",
+    "keywords": ["whmcs", "laravel", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hakan ERSU",
+            "email": "hakanersu@gmail.com"
+        },
+        {
+            "name": "The GalaMz",
+            "email": "mghallamzz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.2",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+       
+    },
+    "autoload": {
+        "psr-0": {
+            "galamz\\Whmcs": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
