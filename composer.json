@@ -1,5 +1,5 @@
 {
-    "name": "galamz/WHMCSL5",
+    "name": "galamz/whmcsl5",
     "description": "Laravel 5 WHMCS API",
     "keywords": ["whmcs", "laravel", "api"],
     "license": "MIT",
