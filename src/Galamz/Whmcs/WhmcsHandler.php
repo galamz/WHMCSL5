@@ -41,7 +41,7 @@ class WhmcsHandler{
 
             $data = json_decode((string)$response->getBody());
 
-            return ($data->result=="success") ? $data : false;
+            return $data;
         }
         catch (ClientException $e)
         {
