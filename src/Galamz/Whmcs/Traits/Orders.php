@@ -2,13 +2,13 @@
 
 trait Orders {
 
-    public function addorder($clientid)
+    public function addorder($clientid,$pid = 0,$billing = 'onetime')
     {
 
 
         $params['clientid']         = $clientid;
-        $params['pid']              = 3; // id 3 free
-        $params['billingcycle']     = 'onetime';
+        $params['pid']              = $pid;
+        $params['billingcycle']     = $billing;
         $params['paymentmethod']    = 'paypal';
 
         $params['noinvoice']        = true;
